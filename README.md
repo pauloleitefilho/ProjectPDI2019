@@ -1,8 +1,11 @@
 # ProjectPDI2019
 Projeto da disciplina de Processamento de imagens do Centro de Informática (Cin) da Universidade Federal de Pernambuco (UFPE)
 
-
-
+########################
+Alunos:
+Geraldo Pires Junior
+Paulo Fernando Leite Filho
+########################
 
 Alterações realizadas nos algoritmos do projeto 
 
