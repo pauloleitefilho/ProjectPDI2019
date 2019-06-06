@@ -1,0 +1,24 @@
+﻿Alterações realizadas nos algoritmos do projeto 
+
+Para rodar o Yolov3-keras-artigo
+1- instalar os pacotes pythom:
+python -m pip install opencv-python
+python -m pip install Cython
+python -m pip install Tensorflow
+python -m pip install Keras
+python -m pip install pydot
+python -m pip install GraphViz
+python -m pip install pycuda
+
+via console: python -m pip install <pacote>
+
+2 - Baixar os pesos (https://pjreddie.com/media/files/yolov3.weights) e colar na raiz Yolo3
+
+2.1 - Rodar o comando: python yad2k.py cfg\yolo.cfg yolo3.weights data\yolo.h5 para atualizaçã odos pesos
+
+3 - Executar o comando: python demo.py, para detecção dos objetos no filme, esta opção é uma demonstração do codigo de Yolo3.
+
+4 - Para gerar as imagens de saida com as caixas delimitadoras: python demo.py --model cfg/yolo3.cfg --load yolo3/yolo.weights --imgdir sample_img --gpu 0.9 --json
+
+5- A saida das imagens estão em imagens/res
+
