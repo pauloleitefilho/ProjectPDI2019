@@ -1,8 +1,14 @@
+###########################
+Algoritmos utilizados neste porjeto:
+Links dos codigos fontes dos projetos utilizados:
 
+- Yolo2: https://github.com/WojciechMormul/yolo2
+- Yolo3: https://github.com/xiaochus/YOLOv3
+- SSD: https://github.com/rykov8/ssd_keras
+###########################
 
-
-
-Alterações realizadas nos algoritmos do projeto 
+#############################
+AlteraÃ§Ãµes realizadas nos algoritmos do projeto desenvolvido.
 
 Para rodar o Yolov3-keras-artigo
 1- instalar os pacotes pythom:
@@ -18,13 +24,13 @@ via console: python -m pip install <pacote>
 
 2 - Baixar os pesos (https://pjreddie.com/media/files/yolov3.weights) e colar na raiz Yolo3
 
-2.1 - Rodar o comando: python yad2k.py cfg\yolo.cfg yolo3.weights data\yolo.h5 para atualizaçã odos pesos
+2.1 - Rodar o comando: python yad2k.py cfg\yolo.cfg yolo3.weights data\yolo.h5 para atualizaÃ§Ã£ odos pesos
 
-3 - Executar o comando: python demo.py, para detecção dos objetos no filme, esta opção é uma demonstração do codigo de Yolo3.
+3 - Executar o comando: python demo.py, para detecÃ§Ã£o dos objetos no filme, esta opÃ§Ã£o Ã© uma demonstraÃ§Ã£o do codigo de Yolo3.
 
 4 - Para gerar as imagens de saida com as caixas delimitadoras: python demo.py --model cfg/yolo3.cfg --load yolo3/yolo.weights --imgdir sample_img --gpu 0.9 --json
 
-5- A saida das imagens estão em imagens/res
+5- A saida das imagens estÃ£o em imagens/res
 
  
 #Como rodar o Yolo 2 
