@@ -1,0 +1,33 @@
+#Como rodar o Yolo 2 
+#Fonte: https://appliedmachinelearning.blog/2018/05/27/running-yolo-v2-for-real-time-object-detection-on-videos-images-via-darkflow/
+
+# Clone the darkflow github repository:
+
+git clone https://github.com/thtrieu/darkflow
+
+#######################################
+# Para rodar no Visual Studio Code no Windows10 
+# Instala o Darkflow
+python -m pip install -e .
+
+#Instala os pacotes necessraios via terminal:
+python -m pip install tensorflow 
+python -m pip install opencv-python
+python -m pip install cython
+python -m pip install numpy
+
+#Cython extensions in place.
+python3 setup.py build_ext --inplace
+
+# baixar os pesos YOLOv2 608x608 em:http://pjreddie.com/darknet/yolo/
+
+# No arquivo de labels.txt completar as classes: https://github.com/nightrome/cocostuff/blob/master/labels.txt
+
+#Criar o arquivo yolov2.cfg: https://github.com/pjreddie/darknet/blob/master/cfg/yolov2.cfg
+
+#Rodar o comando: python flow --model cfg/yolov2.cfg --load bin/yolov2.weights --imgdir sample_img --gpu 0.9 --json
+
+# Copiar as classes de coco,names para /cfg/yolov2.cfg
+
+# A saida será aramzenada na pasta out
+# As imagens para teste devem ser armazenadas em sample_img
